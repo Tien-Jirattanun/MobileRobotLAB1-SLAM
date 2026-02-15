@@ -51,7 +51,8 @@ This matrix represents the partial derivatives of the state vector $[x, y, v, \t
 After linearization the model, This model be used in Kalman's equation.
 
 ### EKF equation
-**Prediction Step:**
+**Prediction Step**
+
 $$
 \begin{aligned}
 \bar{\mu}_t &= f(\mu_{t-1}, u_t) \\
@@ -59,7 +60,8 @@ $$
 \end{aligned}
 $$
 
-**Correction Step:**
+**Correction Step**
+
 $$
 \begin{aligned}
 K_t &= \bar{\Sigma}_t H_t^T (H_t \bar{\Sigma}_t H_t^T + R_t)^{-1} \\
